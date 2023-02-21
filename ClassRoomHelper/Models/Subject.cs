@@ -1,9 +1,17 @@
-﻿namespace ClassRoomHelper.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+namespace ClassRoomHelper.Models
 {
     public class Subject
     {
-        public int ClassID { get; set; }
-        public string SubjectName { get; set; }
-        public string Term { get; set; }      
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int SubjectID { get; set; }
+        [Required]
+        public string SubjectName { get; set; }        
+        public string? SubjectDescription { get; set; }
+        [Required]
+        public string SubjectTerm { get; set; }
+        
     }
 }

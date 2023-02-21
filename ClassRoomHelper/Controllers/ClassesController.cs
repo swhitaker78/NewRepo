@@ -1,83 +1,19 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ClassRoomHelper.Data;
+using ClassRoomHelper.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ClassRoomHelper.Controllers
 {
-    public class ClassesController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ClassesController : ControllerBase
     {
-        // GET: ClassesController
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        // GET: ClassesController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: ClassesController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ClassesController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ClassesController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: ClassesController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ClassesController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ClassesController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        private readonly Context _context;
+        public ClassesController(Context context) => _context = context;
+         
+        public async Task<IEnumerable<Subject>> GetClasses =>
+         await _context.Subjects.ToListAsync();
     }
 }
