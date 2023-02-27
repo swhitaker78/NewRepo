@@ -9,10 +9,10 @@ namespace ClassRoomHelper.Data
         }
         public DbSet<Answers> Answers { get; set; }
         public DbSet<Assignment> Assignments { get; set; }
-        public DbSet<AssignmentDetails> AssignmentsDetails { get; set; }
+        public DbSet<AssignmentDetails> AssignmentDetails { get; set; }
         public DbSet<FlashCard> FlashCards { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Subject> Subjects { get; set; }
-        public DbSet<Users> User { get; set; }
+        public DbSet<Users> Users { get; set; }
     }
 }
