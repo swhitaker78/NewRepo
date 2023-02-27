@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassRoomHelper", "ClassRoomHelper\ClassRoomHelper.csproj", "{0B053BD7-CEB4-46EC-8804-162A9547BF78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassRoomHelper", "ClassRoomHelper\ClassRoomHelper.csproj", "{0B053BD7-CEB4-46EC-8804-162A9547BF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassroom", "MyClassroom\MyClassroom.csproj", "{D4BC6EB0-53FD-48BF-9C3D-72D81B4FD161}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0B053BD7-CEB4-46EC-8804-162A9547BF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B053BD7-CEB4-46EC-8804-162A9547BF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B053BD7-CEB4-46EC-8804-162A9547BF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4BC6EB0-53FD-48BF-9C3D-72D81B4FD161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BC6EB0-53FD-48BF-9C3D-72D81B4FD161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BC6EB0-53FD-48BF-9C3D-72D81B4FD161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BC6EB0-53FD-48BF-9C3D-72D81B4FD161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
